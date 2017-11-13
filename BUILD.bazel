@@ -1,0 +1,19 @@
+
+cc_library(
+	name = "unordered",
+	visibility = ["//visibility:public"],
+	includes = [
+		"include/",
+	],
+	hdrs = glob([
+		"include/boost/**/*.hpp",
+		"include/boost/**/*.ipp",
+	]),
+	srcs = [
+	],
+	defines = [
+	],
+	deps = [
+		"@com_github_bazelboost_config//:config"
+	],
+)
